@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <RadioGroup
+            android:id="@+id/finger_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/right_thumb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="0"
+                android:text="Right Thumb" />
+
+            <RadioButton
+                android:id="@+id/right_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="1"
+                android:text="Right Index" />
+
+            <RadioButton
+                android:id="@+id/left_thumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="2"
+                android:text="Left Thumb" />
+
+            <RadioButton
+                android:id="@+id/left_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="3"
+                android:text="Left Index" />
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/colorPrimaryDark2" />
+
+    <LinearLayout
+        android:id="@+id/option_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <TextView
+            android:id="@+id/yes"
+            style="@style/TitleStyleView"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="DONE"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/cancel"
+            style="@style/TitleStyleView"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="CANCEL" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
